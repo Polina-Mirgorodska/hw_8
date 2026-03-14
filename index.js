@@ -22,3 +22,14 @@ const card = [
     'Карточка-5',
 ];
 
+const cardToRemove = card.indexOf("Карточка-3");
+card.splice(cardToRemove, 1);
+console.log(card);
+
+const cardToInsert = "Карточка-6"
+card.splice(4, 0, cardToInsert)
+console.log(card);
+
+const cardToUpdate = card.indexOf("Карточка-4")
+card.splice(cardToUpdate, 1, "Нова карточка")
+console.log(card);
